@@ -1,0 +1,33 @@
+[package]
+name = "spt-neural-net"
+version = "0.1.0"
+description = "Native Rust implementation of the Neural Network defined in \"Make Your Own Neural Network\" by Tariq Rashid"
+edition = "2021"
+
+[dependencies]
+activation_functions = "0.1.1"
+anyhow = "1.0.94"
+chrono = "0.4.39"
+imageproc = "0.25.0"
+matplotlib = "0.2.0"
+ndarray = "0.16.1"
+ndarray-rand = "0.15.0"
+ndarray-stats = "0.6.0"
+
+[lints.clippy]
+all = { level = "deny", priority = -1 }
+cargo = { level = "deny", priority = -1 }
+complexity = { level = "deny", priority = -1 }
+correctness = { level = "deny", priority = -1 }
+nursery = { level = "deny", priority = -1 }
+pedantic = { level = "deny", priority = -1 }
+perf = { level = "deny", priority = -1 }
+style = { level = "deny", priority = -1 }
+suspicious = { level = "deny", priority = -1 }
+
+# Cargo Clippy rules allowed
+cargo_common_metadata = "allow"
+multiple_crate_versions = "allow"
+
+# Correctness Clippy rules allowed
+missing_docs_in_private_items = "allow"
